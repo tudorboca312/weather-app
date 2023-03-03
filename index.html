@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/1b9d50247e.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="container container-first">
+    <div class="row first shit">
+      <div class="col-lg-5 col-md-12 first order-lg-first left">
+        <p class="location"></p>
+        <!-- <p class="time"></p> -->
+        <p class="date"></p>
+        <div class="another-container">
+          <h1 class="temperature">
+            <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon"> -->
+            <img class="weather-icon large" id="iconUp" src="/public/icons/cloud-bolt-solid.svg" data-current-icon />
+            <p class="temperature-group">
+              <span class="number-temp"> 25</span>&deg;
+          </h1>
+          </p>
+          <div class="container-details">
+            <div class="first-left">
+              <p class="humidity">Precip: <span class="humidity-number"></span>%</p>
+              <p class="today-max-big">Max temp: <span class="today-max"></span>&deg;</p>
+              <p class="feels-like-max">Feels like: <span class="feels-max"></span>&deg;</p>
+            </div>
+            <div class="first-right">
+              <p class="wind">Wind: <span class="wind-number"></span> km/h</p>
+              <p class="today-min-big">Min temp: <span class="today-min"></span>&deg;</p>
+              <p class="feels-like-min">Feels like: <span class="feels-min"></span>&deg;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 first order-md-first order-first search">
+        <div class="d-flex">
+          <input type="search" placeholder="Search" class="form-control me-2" id="search-city" aria-label="Search">
+          <button class="btn btn-outline-success search-button">Search</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <section class="container bottom-side">
+      <div class="row row-cols-md-4 row-cols-sm-2 footer-row">
+        <div class="col-lg-auto  days" id="first-day">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span>&deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+        <div class="col-lg-auto days">
+          <div class="day">Fri</div>
+          <img src="/public/icons/cloud-bolt-solid.svg" class="w-icon iconDown">
+          <div class="temp-day">Max: <span class="max-temp-tomorrow">25</span> &deg;</div>
+          <div class="temp-night">Min: <span class="min-temp-tomorrow">25</span>&deg;</div>
+        </div>
+      </div>
+      <!-- <template id="day-card-template" class="row row-cols-md-4 row-cols-sm-2 footer-row">
+        <div class="day-card col-lg-auto">
+          <img data-icon class="weather-icon" id="iconDown" />
+          <div class="day-card-day day" data-date></div>
+          <div class="temp-day"><span data-temp></span><span>&deg;</span></div>
+        </div>
+      </template> -->
+    </section>
+  </footer>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
