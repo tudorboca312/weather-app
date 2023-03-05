@@ -14,6 +14,7 @@ Installation
 To install the Weather App, simply clone this repository to your local machine:
 
 git clone https://github.com/tudorboca312/weather-app.git
+After the code has been cloned, you need to install exios "npm install axios" and to open this with Node "npm run dev"
 
 Usage
 To use the Weather App, simply open the index.html file in your web browser. Enter the name of the city you want to search for in the search bar and click the "Search" button. The app will retrieve the current weather conditions for the selected city, as well as a 5-day forecast.
